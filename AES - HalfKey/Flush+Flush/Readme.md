@@ -15,19 +15,23 @@ Ubuntu 16.04.3 LTS, Kernel: Linux 4.10.0-28-generic
 ## AES Library:
 
 We have used 2 version of OpenSSL library, i.e., OpenSSL-0.9.7 and OpenSSL-1.0.1f. Following commands are used to compile library.
+	
+```
 	./config -shared no-hw no-asm
 	make
+```
 
 ## Threshold Calculation:
 
 This implantation contains a tool to generate access timings for clflush operation when data is present in cache and cache is empty. Threshold is taken as average of both timing values for this implementation, Threshold varies for different machines. This tool requires gnuplot and its dependencies must be installed on machine before usage. Threshold on our specified machine is 156-cycles.
 
 ## Attack Files (spy.c):
-This attack monitors first round of AES encryption. By using probabilistic method and recorded stats of caches, we are able to successfully create upper half bytes of secret key. Attack is compiled using ?make? command.
+This attack monitors first round of AES encryption. By using probabilistic method and recorded stats of caches, we are able to successfully create upper half bytes of secret key. Attack is compiled using 'make' command.
 
 ## Configurations:
 This attack requires some machine specific details, you need to edit ?config? file and set it according to your machine, such as:
 
+```
 OPENSSL: Contains path of OpenSSL Library
 NUMBER_OF_ENCRYPTIONS: Minimum 350, More rounds mean more accurate results 
 	
@@ -36,6 +40,5 @@ TABLE0: AES T-Table 0 starting address
 TABLE1: AES T-Table 1 starting address
 TABLE2: AES T-Table 2 starting address
 TABLE3: AES T-Table 3 starting address
-
-
+```	
 
