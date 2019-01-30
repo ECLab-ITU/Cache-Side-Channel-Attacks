@@ -1,4 +1,4 @@
-OPENSSL="/home/usmanali/Desktop/SCA/Victims/openssl-0.9.7l"
+OPENSSL="/home/ECLab/Desktop/SCA/Victims/openssl-0.9.7l"
 NUMBER_OF_ENCRYPTIONS=16000
 THRESHOLD=180
 TABLE0 = 0x100f00
