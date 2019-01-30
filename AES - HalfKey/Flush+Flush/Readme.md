@@ -29,7 +29,7 @@ This implantation contains a tool to generate access timings for clflush operati
 This attack monitors first round of AES encryption. By using probabilistic method and recorded stats of caches, we are able to successfully create upper half bytes of secret key. Attack is compiled using 'make' command.
 
 ## Configurations:
-This attack requires some machine specific details, you need to edit ?config? file and set it according to your machine, such as:
+This attack requires some machine specific details, you need to edit 'config' file and set it according to your machine, such as:
 
 ```
 OPENSSL: Contains path of OpenSSL Library
