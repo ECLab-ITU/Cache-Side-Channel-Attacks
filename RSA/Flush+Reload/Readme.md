@@ -83,5 +83,5 @@ ORIGINALKEY: Key to compare with retrieved key,. XOR results.
 offsets for bi_square, bi_terminate and bi_subtract can be find by disassembling library using following commands:
 
 ```
-	objdump libaxtls.so.1 > analysis
+	objdump -d libaxtls.so.1 > analysis
 ```
