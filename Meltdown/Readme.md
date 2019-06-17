@@ -1,4 +1,4 @@
-# Spectre Attack Implementation code on x86
+# Meltdown Attack Implementation code on x86
 
 Meltdown attack is proposed by Moritz Lipp et al. in their research paper entitled, Meltdown: Reading Kernel Memory from User Space at 27th {USENIX} Security Symposium ({USENIX} Security 18) in 2018. This attack exploits un-authorized access to kernal space memery and allow adversaries to read complete physical memory at user level. This attack exploit out-of-order executions and with combination of cache-based side channel attack (Flush+Reload) as covert channel able to read kernal memory without necessary permissions. This implmenentation use same code as available at (https://github.com/IAIK/meltdown).
 
