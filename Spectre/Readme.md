@@ -1,6 +1,6 @@
 # Spectre Attack Implementation code on x86
 
-Spectre attack is by Paul Kocher et. al. in their research paper entitled, Spectre Attacks: Exploiting Speculative Execution at 40th IEEE Symposium on Security and Privacy (S\&P'19) in 2019. This attack exploits un-authorized access to program memery by exploiting branch prediction and using cache-based side channel attack (Flush+Reload) as covert channel. This implmenentation use same code as proposed by authors with some modifications (https://github.com/crozone/SpectrePoC).
+Spectre attack is proposed by Paul Kocher et. al. in their research paper entitled, Spectre Attacks: Exploiting Speculative Execution at 40th IEEE Symposium on Security and Privacy (S\&P'19) in 2019. This attack exploits un-authorized access to program memery by exploiting branch prediction and using cache-based side channel attack (Flush+Reload) as covert channel. This implmenentation use same code as proposed by authors with some modifications as done by (https://github.com/crozone/SpectrePoC).
 
 ## Machine Specifications:
 
@@ -13,7 +13,7 @@ Ubuntu 16.04.3 LTS, Kernel: Linux 4.10.0-28-generic
 
 ```
 	make
-	./spectre 150
+	./spectre 180
 ```
 
 Default threshold for Flush+Reload is 80 on this attack configurations, where on our machine, it is 180. You should use threshold according to your machine.
