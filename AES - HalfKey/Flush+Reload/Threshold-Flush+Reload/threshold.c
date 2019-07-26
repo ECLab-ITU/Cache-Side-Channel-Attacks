@@ -11,11 +11,11 @@ size_t miss_histogram[600];
 
 size_t onlyreload(size_t* addr)
 {
+  maccess(addr);
+  maccess(addr);
   size_t time = rdtsc();
-  flush(addr);
+  maccess(addr);
   size_t delta = rdtsc() - time;
-  maccess(addr);
-  maccess(addr);
   return delta;
 }
 
