@@ -14,7 +14,7 @@ Ubuntu 16.04.3 LTS, Kernel: Linux 4.10.0-28-generic
 
 ## AES Library:
 
-We have used 2 version of OpenSSL library, i.e., OpenSSL-0.9.7 and OpenSSL-1.0.1f. Following commands are used to compile library.
+We have used 2 version of OpenSSL library, i.e., OpenSSL-0.9.7l and OpenSSL-1.0.1f. Following commands are used to compile library.
 	
 ```
 	./config -shared no-hw no-asm
